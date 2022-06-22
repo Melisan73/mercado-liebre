@@ -1,0 +1,456 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+
+*{
+    padding:0px;/*relleno*/
+    margin:0px;/*margen*/
+    box-sizing: border-box;/*le dice al navegador tomar en 
+    cuenta para cualquier valor que se especifique de borde
+     o de relleno para el ancho o alto de un elemento. 
+     Es decir, si se define un elemento con un ancho de
+      100 pixeles. Esos 100 pixeles incluíran cualquier
+    borde o relleno que se añadan, y la caja de contenido
+    se encogerá para absorber ese ancho extra. 
+    Esto típicamente hace mucho más fácil dimensionar*/
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;  
+}
+
+/*el header completo*/
+header{
+    background-color: #EAC926;
+    padding: 20px;
+    width: 100%;
+    /*"Para que quede el header arriba"*/
+    position: sticky;/* The element will scroll along with its container, 
+    until it is at the top of the container (or reaches the offset specified 
+    in top), and will then stop scrolling, so it stays visible.*/
+    top: 0;/*especifica parte de la posición de un elemento posicionado. 
+    No tiene efecto en elementos no posicionados*/
+    z-index: 1; /*especifica: 1.El nivel de apilamiento en el actual contexto de
+    apilado.2. Si la caja establece un contexto de apilamiento local
+    es como el nivel de capaz y su posición siendo el menor valor el de atrás*/
+
+}
+
+.mainheader{
+    display: flex;
+    box-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.mainheader .barsearch{
+    flex-wrap: nowrap;
+    
+}
+
+/*partes del header*/
+header a{
+    color: #03264C;
+    text-decoration: none;
+    display: inline-block;/*the top and bottom margins/paddings are respected*/
+    padding:3px 0;
+    font-size: 17px;/*tamaño fuente*/
+}
+
+.logo{
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.barsearch{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.barsearch input{
+    width: 200px;
+    height: 60px;
+    border-top-left-radius:  6px;
+    border-bottom-left-radius:  6px;
+    border:none;
+    padding-left: 15px;
+    color: #666; 
+    font-size: 18px;
+}
+
+.barsearch button{
+    width: 40px;
+    height: 60px;
+    border-top-right-radius:  6px;
+    border-bottom-right-radius:  6px;
+    background-color: #FFF;
+    color: #666; 
+    border:none;
+}
+
+.barsearch button i{
+    size: 2em;
+
+}
+
+.slogan{
+    font-weight: 400;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 30px;
+}
+
+.navbar{
+    display: none;/* is commonly used with JavaScript to hide and show elements without
+     deleting and recreating them.*/ 
+    width: 300px;
+    height: 100px;
+    padding-right:200px;
+    order: -1;
+
+
+}
+
+.navbar ul{
+    list-style: none; /* El uso de la propiedad list-style es muy 
+    común porque una de las buenas prácticas con los marcadores 
+    (viñetas)de las listas consiste en establecer de forma simultánea 
+    un marcador por defecto y un marcador propio*/ 
+    margin: 0;
+    padding: 0;
+}
+
+
+.burger-menu{
+    font-size: 2em;
+    color:white;
+    background-color: #1259c3;
+    text-align: center;
+    padding: 8.5px;
+    width: 60px;
+    height: 59px;
+    border-radius:8px;
+    margin: auto;/*By assigning auto to the left and right margins of an element,
+     they take up the available horizontal space in the element’s container
+      equally – and thus the element gets centered.*/
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.banner img{
+    width: 100%;
+    position: relative;
+ }
+
+/*main completo*/
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+.titlesh2{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #666;
+    padding: 25px;
+    font-weight: 9000px;
+}
+
+.container_section{
+    display: flex;/* en este caso display(pantalla), Los elementos flexibles 
+    pueden ser estirados para utilizar el espacio disponible proporcional 
+    a su factor de crecimiento flexible o su factor de contracción flexible 
+    para evitar desbordamiento*/
+    flex-wrap: wrap;/*especifica si los elementos "hijos" son obligados a 
+    permanecer en una misma línea o pueden fluir en varias líneas. Si la 
+    cobertura (wrap) está permitida, esta propiedad también te permite controlar
+     la dirección en la cual serán apilados los elementos.*/
+    justify-content: space-between;
+}
+
+.detail_article{
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    /* la sombra se aplica solo en > tablets
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    */
+}
+
+.image{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.content_articles{
+    text-align: left;
+    padding: 20px;
+    border-top: 1px solid #ebebeb;
+    position: relative; /*  es un elemento cuyo valor computado de position
+     es relative. Las propiedades top y bottom especifican el desplazamiento 
+     vertical desde su posición original; las propiedades left y right
+     especifican su desplazamiento horizontal. << necesario para ubicar 
+     el icono del camion */
+}
+
+.content_articles .info_product ul{
+    background-color: #ebebeb;
+    line-height: center;
+    
+
+}
+
+.content_articles{
+    position: relative;
+    border-top:2px solid lightgray ;
+}
+
+.camion{
+    font-size: 30px;
+    padding: 40px;
+    width: 20px;
+    height: 20px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    justify-self: center;
+
+    display: inline-flex;  
+    position: absolute;  /* << funciona correctamente si su elemento contenedor 
+    esta indicado con relative, en nuestro caso... contenidoarticulos */
+    
+    right: 60px;
+    top: -52px;
+}
+
+.info_product{
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.precios{
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 30%;  
+    list-style: none;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 70%;  
+    padding-left: 7px;
+    list-style: none;
+
+}
+
+.descripciones {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    visibility: hidden;
+    list-style: none;
+}
+
+.detail.article:hover, .content_box i{
+    transition: 1000ms;/*To create a transition effect, you must specify two things:
+    1.the CSS property you want to add an effect to
+    2.the duration of the effect*/
+
+    transform: rotate(-90deg);/*permite modificar el espacio de coordenadas del modelo de
+    formato visual CSS. Usándola, los elementos pueden ser trasladados, rotados,
+    escalados o sesgados de acuerdo a los valores establecidos.*/
+}
+
+/*Footer*/
+footer{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 30px;
+}
+
+.container_footer{
+    display: flex ;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+footer article{
+    text-align: center;
+    font-size: 16px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+footer article i{
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+}
+
+.copy{
+    text-align: left;
+    margin-left: 10px;
+}
+
+/*Media 360px 
+Tablet*/
+@media (min-width:360px) {
+    
+main.header h4{
+    line
+    flex-direction: row;
+}
+
+.detail_article{
+    width:48%;
+    margin-bottom:21px;
+}
+
+.detail.article:hover .decripciones{
+    visibility: visible;
+
+}
+
+.navbar li{
+    visibility: visible;
+}
+
+.burger-menu{
+    visibility: hidden;
+}
+
+
+
+}
+
+@media {
+
+}
+
+/*LOGIN*/
+.container_form{
+    display: flex;
+    background-color: #EAC926;
+    justify-content: center;
+
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5px;
+}
+
+.button{
+    width: 400px;
+    justify-content: center;
+
+
+}
+
+.casilla{
+    background-color: white;
+    color: lightgray;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+form button{
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+/*REGISTRO*/
+
+
+.container_form2{
+    display: flex;
+    width: 70%;
+    max-width: 80%;
+    margin:auto;
+    padding: 25px 15px ;  
+    text-align: center;   
+}
+
+h3{
+    padding-right: 120px;
+}
+
+.fecha{
+    padding-right: 64px; 
+}
+
+.perfil{
+    padding-right: 95px;  
+}
+
+.intereses{
+    padding-right: 140px; 
+
+}
+.cajas_texto{
+    color:#666;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    text-align: center;
+    width: 60%;
+    border-radius: 3px;
+}
+
+.uno{
+    padding-right: 125px ;
+}
+
+.dos{
+    padding-right: 135px ;
+}
+
+.tres{
+    padding-right: 135px ;
+}
+
+.cuatro{
+    padding-right: 100px ;
+}
+
+.cinco{
+    padding-right: 110px ;
+}
+
+.foto{
+    padding-right: 90px
+
+}

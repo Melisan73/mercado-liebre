@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+
+    <!--archivo css en el fichero--> 
+    <link rel="stylesheet" href="..\public\css\styles.css">
+
+    <!--font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+    <!--Iconos
+    https://fontawesome.com/v5/search?s=solid%2Cbrands--> 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet">
+
+    <!--estilos-->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<!--Cuerpo-->
+<body>
+
+<!--encabezado--> 
+<header>
+    
+<div class="mainheader">
+
+    <!--logo--> 
+
+    <a href="/">
+        <img src="..\public\images\logo-mercado-liebre.svg" 
+        alt="logo Mercado Liebre" class="logo"> 
+    </a>
+        
+    <!--barra de busqueda-->
+    
+    <form action="/" method="GET">
+        <div>  
+            <div class="barsearch">
+                <input type="search" value="Buscar productos, marcas y más...">
+                <button type="button">
+                <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form><br>
+</div>          
+    <!--slogan-->
+    
+    <h4 class="slogan">
+        <i class="fas fa-hand-holding-usd"></i>
+        Compra en cuotas y sin tarjeta de crédito
+    </h4>
+            
+
+
+    <!--burgermenu-->
+    <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <!--listado del menu-->
+    
+    <nav class="navbar">
+        
+        <ul>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li><br>
+        </ul>
+
+        <ul class="navbar-right">
+            <li><a href="/register">Crea tu cuenta </a><i class="fas fa-address-card"></i></li>
+            <li><a href="/login">Ingres</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+        </ul>
+
+    </nav>
+            
+</header>
+
+    <!--banner-->
+        
+    <div class="banner">
+        <img src="..\public\images\img-home-banner.jpg" alt="Banner de ofertas">
+    </div>
+             
+<main>
+        
+    <!--título ultima visita-->
+
+    <h2 class="titlesh2">Basado en tu última visita</h2>
+    
+    <!--seccion de ultima visita-->
+
+    <section id="lastview">
+
+        <!--caja contenedora felxbox inicio-->
+        <div class="container_section">
+
+        <!--1. cafetera-->
+        <article class="detail_article" >
+            <img src="../public\images\img-cafetera-moulinex.jpg" alt="cafetera moulinex" class="image">
+
+        <div class="content_articles">
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->
+                    <li class="precios">$ 6.770</li>
+                    <li class="descuentos">40% off</li>
+                    <li class="descripciones">Cafetera moulinex</li>
+        </div>
+        </article>
+
+        <!--2. macbook-->
+        <article class="detail_article">
+        <img src="../public\images\img-macbook-pro-2019.jpg" alt="macbook pro" class="image">
+        
+        <div  class="content_articles">
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->
+                    <li class="precios">$ 230.000</li>
+                    <li class="descuentos">20% off</li>                
+                    <li class="descripciones">Macbook pro 2019</li>
+                </ul>
+        </div>
+        </article>
+       
+        <!--3. samsung-->
+        <article class="detail_article">
+        <img src="../public\images\img-samsung-galaxy-s10.jpg" alt="mobile samsung galaxy s10" class="image">
+            
+       
+        <div class="content_articles"><!--listado info producto-->
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->                
+                    <li class="precios">$ 70.800</li>
+                    <li class="descuentos">10% off</li>                
+                    <li class="descripciones">samsung galaxy s10</li>
+                </ul> 
+        </div>
+        </article>
+
+        <!--4. smart-tv-->
+        <article class="detail_article">
+        <img src="../public\images\img-tv-samsung-smart.jpg" alt="Smart TV Samsung" class="image">
+           
+        
+        <div class="content_articles"><!--listado info producto-->
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->                
+                   <li class="precios">$ 23.200</li>
+                   <li class="descuentos">5% off</li>                
+                   <li class="descripciones">SamartTV Samsung 43''</li>
+                </ul>   
+        </div>   
+        </article>
+
+        </div>
+        <!-- contenedor flexbox (fin) -->
+
+          
+        </section>
+
+        <h2 class="titlesh2">Ofertas</h2>
+
+        <!--seccion de ofertas-->  
+        
+        <section id="Oferts">
+
+            <!--segunda caja contenedora flexbox ofertas--> 
+            <div class="container_section">
+            
+        
+        <!--1. cafetera-->
+        <article class="detail_article" >
+            <img src="../public\images\img-cafetera-moulinex.jpg" alt="cafetera moulinex" class="image">
+
+        <div class="content_articles">
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->                
+                    <li class="precios">$ 6.770</li>
+                    <li class="descuentos">40% off</li>                
+                    <li class="descripciones">Cafetera moulinex</li>
+                </ul>
+        </div>
+        </article>
+
+        <!--2. macbook-->
+        <article class="detail_article">
+        <img src="../public\images\img-macbook-pro-2019.jpg" alt="macbook pro" class="image">
+        
+        <div  class="content_articles">
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->                
+                    <li class="precios">$ 230.000</li>
+                    <li class="descuentos">20% off</li>                
+                    <li class="descripciones">Macbook pro 2019</li>
+                </ul>
+        </div>
+        </article>
+       
+        <!--3. samsung-->
+        <article class="detail_article">
+        <img src="../public\images\img-samsung-galaxy-s10.jpg" alt="mobile samsung galaxy s10" class="image"">
+                   
+        <div class="content_articles"><!--listado info producto-->
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->                
+                    <li class="precios">$ 70.800</li>
+                    <li class="descuentos">10% off</li>                
+                    <li class="descripciones">samsung galaxy s10</li>
+                </ul> 
+        </div>
+        </article>
+
+        <!--4. smart-tv-->
+        <article class="detail_article">
+        <img src="../public\images\img-tv-samsung-smart.jpg" alt="Smart TV Samsung" class="image">
+                   
+        <div class="content_articles"><!--listado info producto-->
+            <i class="fas fa-truck camion" class="camion"></i><!--icono camión-->
+                <ul class="info_product"><!--listado info producto-->                
+                   <li class="precios">$ 23.200</li>
+                   <li class="descuentos">5% off</li>                
+                   <li class="descripciones">SamartTV Samsung 43''</li>
+                </ul>   
+        </div>   
+        </article>
+
+        </div>
+        <!-- contenedor flexbox (fin) -->
+           
+       
+        </section><br>   
+    
+</main>
+
+
+<!--pie de página footer-->
+
+<footer>
+
+<div class="container_footer">   
+    <!--1-->
+    <article>
+        <i class="fas fa-credit-card"></i>
+            <h3>Paga con tarjeta o efectivo</h3>
+            <p>Con mercado libre cash tenes cuotas sin<br>
+               interés con tarjeta o efectivo en punyos de<br>
+               pago. ¡Y siempre es seguro!</p><br><br>
+    </article><br>
+
+    <!--2-->
+    <article>
+        <i class="fas fa-gift"></i>
+        <h3>Envío gratis desde $ 2.500</h3>  
+        <p>Solo por estar registrad@ en MercadoLiebre<br>
+           tenes envíos gratis en miles de productos. Es<br>
+           un beneficio de MercadoPuntos</p><br><br>        
+    </article><br>
+   
+    <!--3-->
+    <article>
+        <i class="fas fa-user-shield"></i>
+        <h3>Seguridad de principio a fin</h3>  
+        <p>¿No te gusta?¡Devolvelo! En MercadoLiebre<br>
+            no hay nada que no puedas hacer porque<br>
+            estas siempre protegid@</p><br><br>   
+    </article><br>
+    
+    <!--4-->
+    <article class="copy">
+        <p>Copyright © 1999 - 2020 MercadoLiebre S.R.L</p>        
+    </article>
+        
+</footer>
+
+</body>
+</html>
